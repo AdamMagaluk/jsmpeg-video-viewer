@@ -1403,10 +1403,11 @@ function isNullOrUndefined(arg) {
   var url = require('url');
   var u = url.parse(window.location.href, true);
 
-  var streamUrl = u.query.stream;
+  var streamUrl = u.query.stream || '';
   var width = Number(u.query.width) || 640;
   var height = Number(u.query.height) || 480;
   
+  console.log(streamUrl)
   document.getElementById('i-stream').setAttribute('value', streamUrl);
   document.getElementById('i-width').setAttribute('value', width);
   document.getElementById('i-height').setAttribute('value', height);

@@ -7,6 +7,7 @@
   var width = Number(u.query.width) || 640;
   var height = Number(u.query.height) || 480;
   
+  console.log(streamUrl)
   document.getElementById('i-stream').setAttribute('value', streamUrl);
   document.getElementById('i-width').setAttribute('value', width);
   document.getElementById('i-height').setAttribute('value', height);
