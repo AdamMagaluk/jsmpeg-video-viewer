@@ -3,7 +3,7 @@
   var url = require('url');
   var u = url.parse(window.location.href, true);
 
-  var streamUrl = u.query.stream;
+  var streamUrl = u.query.stream || '';
   var width = Number(u.query.width) || 640;
   var height = Number(u.query.height) || 480;
   
